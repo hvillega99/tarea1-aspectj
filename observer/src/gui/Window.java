@@ -24,8 +24,8 @@ public class Window extends Observable{
 		Color color1 = Color.GREEN;
 		Button btnColor2 = new Button("Azul");
 		Color color2 = Color.BLUE;
-		Button btnColor3 = new Button("Naranja");
-		Color color3 = Color.ORANGE;
+		Button btnColor3 = new Button("Rojo");
+		Color color3 = Color.RED;
 		
 		HBox hbox = new HBox(5);
 		hbox.getChildren().addAll(btnColor1,btnColor2,btnColor3);
@@ -35,7 +35,7 @@ public class Window extends Observable{
 		btnColor1.setOnAction(e->{
 			data.setColor(color1);
 			data.setName(btnColor1.getText());
-			setChanged();
+			setChanged();			
 	        notifyObservers(data);
 		});
 		

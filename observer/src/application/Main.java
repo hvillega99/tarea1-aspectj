@@ -9,6 +9,7 @@ import javafx.scene.layout.BorderPane;
 
 public class Main extends Application {
 	public static BorderPane root;
+	public static String color;
 	@Override
 	public void start(Stage primaryStage) {
 		try {

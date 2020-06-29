@@ -18,6 +18,7 @@ public class Controller implements Observer {
 		
 		System.out.println("El color cambió a " + data.getName());
 		Main.root.setBackground(new Background(new BackgroundFill(data.getColor(), CornerRadii.EMPTY, Insets.EMPTY)));
+	    Main.color=data.getName();
 	}
 
 }
